@@ -1,0 +1,42 @@
+:root {
+  --main-font: 'Roboto', sans-serif;
+  --secondary-font: 'Raleway', sans-serif;
+  --title-color-white-them: #212121;
+  --title-color-dark-theme: #ffffff;
+  --text-color: #757575;
+  --accent-text-color: #2196f3;
+  --text-btn-white-theme: #212121;
+  --text-btn-dark-theme: #ffffff;
+  --active-text-btn-white-theme: #ffffff;
+  --active-text-btn-dark-theme: #212121;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--main-font);
+  font-style: normal;
+  color: var(--text-color);
+  background-color: #ffffff;
+}
+
+#gallery {
+  display: flex;
+  width: 1200px;
+  align-items: center;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.item:not(:last-child) {
+  margin-right: 15px;
+}
